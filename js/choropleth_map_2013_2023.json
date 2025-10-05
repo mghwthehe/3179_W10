@@ -2,9 +2,9 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Live Birth Rate per 1,000 People (2013-2023)",
   "width": "container",
-  "height": 520,
+  "height": 400,
   "autosize": {"type": "fit", "contains": "padding"},
-  "projection": {"type": "mercator", "center": [110, 3.8], "scale": 2000},
+  "projection": {"type": "mercator", "center": [110, 3.8], "scale": 2500},
   "params": [
     {
       "name": "yr",
