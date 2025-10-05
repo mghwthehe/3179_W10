@@ -21,69 +21,61 @@
     text-align: center;
   }
 
-  /* ---------- Header ---------- */
   header {
-    padding: 40px 0 10px 0;
-    margin: 0 auto;
-    max-width: 1000px;
+    padding: 40px 0 20px 0;
   }
 
   header h1 {
-    font-size: 2.6em;
+    font-size: 2.8em;
     font-weight: 800;
     color: #ffffff;
     margin-bottom: 10px;
   }
 
   header p {
-    font-size: 1.1em;
-    font-weight: 400;
+    font-size: 1.2em;
     color: #cfcfcf;
-    margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
   }
 
-  /* ---------- Chart Layout ---------- */
+  /* Stack visualisations vertically */
   .chart-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 35px;
+    gap: 60px; /* space between map and chart */
     width: 100%;
-    padding: 10px 0 50px 0;
   }
 
-  /* ---------- Chart Block ---------- */
+  /* Each visual block */
   .chart {
     background-color: #161d2f;
     border-radius: 18px;
-    padding: 20px 22px 30px 22px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
-    width: 75%;
-    max-width: 750px;
-    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    max-width: 1000px;
+    width: 90%;
   }
 
   .chart h2 {
     text-align: left;
-    color: #ffffff;
+    font-size: 1.5em;
     font-weight: 700;
-    font-size: 1.3em;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
+    color: #ffffff;
   }
 
-  /* ---------- Vega Chart Frame ---------- */
+  /* Adjust visualization size */
   .vega-embed {
     width: 100%;
-    max-height: 480px;
+    max-width: 950px;
   }
 
-  /* ---------- Footer ---------- */
+  /* Optional: add spacing below */
   footer {
     font-size: 0.9em;
-    color: #a3a3a3;
-    margin-top: 20px;
-    text-align: center;
+    color: #a5a5a5;
+    margin-top: 60px;
   }
 </style>
 
