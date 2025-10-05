@@ -4,7 +4,6 @@
   <meta charset="utf-8" />
   <title>Birth & Fertility in Malaysia (2013-2023)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <!-- Vega libs -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
@@ -23,18 +22,18 @@
     body{margin:0;background:var(--bg);color:var(--text);
          font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;}
          
-    .page{max-width:1200px;margin:0 auto;padding:32px 18px 64px;}
-    header{margin-bottom:18px;}
+    .page{max-width:1200px;margin:0 auto;padding:32px 24px 64px;}
+    header{margin-bottom:24px;}
     header h1{margin:0 0 6px;font-weight:800;letter-spacing:.3px;
               font-size:clamp(2rem,1.4rem + 2.4vw,2.8rem);}
     header p{margin:0;color:var(--muted);font-size:1.05rem;}
 
-    .stack{display:grid;gap:22px;}
+    .stack{display:grid;gap:28px;}
     .card{background:var(--panel);border-radius:var(--radius);
-          box-shadow:var(--shadow);padding:18px 18px 14px;}
-    .card h2{margin:2px 0 12px;font-size:1.28rem;font-weight:750;}
+          box-shadow:var(--shadow);padding:28px 28px 24px;}
+    .card h2{margin:2px 0 18px;font-size:1.4rem;font-weight:750;}
 
-    .viz{width:100%;}
+    .viz{width:100%;min-height:600px;}
     canvas,svg{max-width:100%;height:auto;display:block;}
 
     /* Pretty Vega controls */
@@ -70,8 +69,16 @@
   </div>
 
   <script>
-    vegaEmbed('#vis-choropleth', 'https://raw.githubusercontent.com/mghwthehe/3179_W10/refs/heads/main/js/choropleth_map_2013_2023.json', {actions:false});
-    vegaEmbed('#vis-line',       'https://raw.githubusercontent.com/mghwthehe/3179_W10/refs/heads/main/js/line_chart_tfr_trend.json',          {actions:false});
+    vegaEmbed('#vis-choropleth', 'https://raw.githubusercontent.com/mghwthehe/3179_W10/refs/heads/main/js/choropleth_map_2013_2023.json', {
+      actions:false,
+      width: 'container',
+      height: 650
+    });
+    vegaEmbed('#vis-line', 'https://raw.githubusercontent.com/mghwthehe/3179_W10/refs/heads/main/js/line_chart_tfr_trend.json', {
+      actions:false,
+      width: 'container',
+      height: 600
+    });
   </script>
 </body>
 </html>
