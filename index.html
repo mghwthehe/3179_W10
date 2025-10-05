@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <title>Birth & Fertility in Malaysia (2013-2023)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <!-- Vega libs -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
@@ -28,12 +29,12 @@
               font-size:clamp(2rem,1.4rem + 2.4vw,2.8rem);}
     header p{margin:0;color:var(--muted);font-size:1.05rem;}
 
-    .stack{display:grid;gap:25px;}
+    .stack{display:grid;gap:28px;}
     .card{background:var(--panel);border-radius:var(--radius);
           box-shadow:var(--shadow);padding:28px 28px 24px;}
     .card h2{margin:2px 0 18px;font-size:1.4rem;font-weight:750;}
 
-    .viz{width:100%;min-height:600px;}
+    .viz{width:100%;}
     canvas,svg{max-width:100%;height:auto;display:block;}
 
     /* Pretty Vega controls */
@@ -72,12 +73,12 @@
     vegaEmbed('#vis-choropleth', 'https://raw.githubusercontent.com/mghwthehe/3179_W10/refs/heads/main/js/choropleth_map_2013_2023.json', {
       actions:false,
       width: 'container',
-      height: 450
+      height: 500
     });
     vegaEmbed('#vis-line', 'https://raw.githubusercontent.com/mghwthehe/3179_W10/refs/heads/main/js/line_chart_tfr_trend.json', {
       actions:false,
       width: 'container',
-      height: 450
+      height: 500
     });
   </script>
 </body>
