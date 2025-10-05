@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title> Birth & Fertility in Malaysia (2013-2023) </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <header class="container">
+    <h1>Birth & Fertility in Malaysia (2013-2023)</h1>
+    <p>A Vega-Lite HTML webpage with a choropleth map and a line chart. </p>
+  </header>
+
+  <main class="container grid">
+    <section class="card">
+      <h2> Live Birth Rate per 1,000 People </h2>
+      <div id="vis-choropleth" class="viz" role="img" aria-label="Choropleth map of birth rate"></div>
+    </section>
+
+    <section class="card">
+      <h2> TFR Trend by State </h2>
+      <div id="vis-line" class="viz" role="img" aria-label="Line chart of total fertility rate"></div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p style="color:#a8acb3;font-size:.9rem;">
+      Data Source:
+      1. OpenDOSM
+      2. data.gov.my
+      Built with Vega-Lite.
+    </p>
+  </footer>
+
+  <script>
+    // Embed the two visualisations
+    vegaEmbed('#vis-choropleth', 'js/choropleth_map_live_birth_rate.json', {actions:false});
+    vegaEmbed('#vis-line',       'js/line_chart_tfr_trend.json',          {actions:false});
+  </script>
+</body>
+</html>
