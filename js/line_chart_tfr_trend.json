@@ -1,8 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Total Fertility Rate (TFR) by State, 2013-2023",
-  "width": 1000,
-  "height": 360,
+  "width": "container",
   "autosize": { "type": "fit", "contains": "padding" },
   "data": { "url": "https://raw.githubusercontent.com/mghwthehe/3179_W10/refs/heads/main/data/line_chart_tfr_trend_2013_2023.csv" },
   "params": [

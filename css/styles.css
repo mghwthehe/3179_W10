@@ -1,16 +1,16 @@
-/* ===== Base ===== */
+/* ===== Theme ===== */
 :root{
-  --bg:#0e1525;
-  --panel:#151b2c;
-  --text:#f5f7ff;
-  --muted:#b9c0d4;
-  --accent:#5aa5ff;
-  --radius:16px;
-  --shadow:0 10px 30px rgba(0,0,0,.35);
+  --bg:#0f1116;           /* page background */
+  --panel:#171c25;        /* card background */
+  --text:#eef1f7;         /* primary text */
+  --muted:#a2a9b8;        /* secondary text */
+  --accent:#5aa5ff;       /* slider accent */
+  --radius:18px;
+  --shadow:0 14px 34px rgba(0,0,0,.35);
 }
 
-*{ box-sizing: border-box; }
-html, body { height: 100%; }
+*{ box-sizing:border-box; }
+html, body{ height:100%; }
 body{
   margin:0;
   background:var(--bg);
@@ -19,28 +19,42 @@ body{
   line-height:1.5;
 }
 
-/* ===== Page container ===== */
-.page{
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 28px 18px 64px;
-}
-
-/* ===== Header ===== */
-header{ margin-bottom: 22px; }
+/* ===== Page frame ===== */
+.page{ max-width:1200px; margin:0 auto; padding:32px 18px 64px; }
+header{ margin-bottom:18px; }
 header h1{
   margin:0 0 6px;
-  font-weight: 800;
+  font-weight:800;
   letter-spacing:.3px;
-  font-size: clamp(1.8rem, 1.3rem + 2.2vw, 2.6rem);
+  font-size: clamp(2rem, 1.4rem + 2.4vw, 2.8rem);
 }
-header p{
-  margin:0;
-  color:var(--muted);
-  font-size: 1.05rem;
+header p{ margin:0; color:var(--muted); font-size:1.05rem; }
+
+/* ===== Vertical stack of charts ===== */
+.stack{ display:grid; gap:22px; }
+.card{
+  background:var(--panel);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:18px 18px 14px;
+}
+.card h2{ margin:2px 0 12px; font-size:1.28rem; font-weight:750; }
+
+/* make the vega views fluid */
+.viz{ width:100%; }
+canvas, svg{ max-width:100%; height:auto; display:block; }
+
+/* ===== Style Vega parameter UIs (slider / dropdown) ===== */
+.vega-bindings{
+  display:flex; align-items:center; gap:10px;
+  margin:10px 0 2px;
+}
+.vega-bindings .vega-bind-name{ color:var(--muted); font-size:.95rem; }
+.vega-bindings input[type="range"]{ width:280px; accent-color:var(--accent); }
+.vega-bindings select{
+  background:#0f1423; color:var(--text);
+  border:1px solid #2a3247; border-radius:8px; padding:6px 8px;
 }
 
-/* ===== Chart stack ===== */
-.chart-stack{
-  display: gr
-}
+/* footer */
+footer{ color:var(--muted); font-size:.95rem; margin-top:26px; }
