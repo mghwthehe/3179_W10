@@ -25,14 +25,14 @@
       "mark": {"type": "geoshape", "stroke": "darkgrey", "strokeWidth": 1, "opacity": 0.6}
     },
     {
-      "data": {"url": "data/choropleth_map_2013_2023.csv"},
+      "data": {"url": "https://raw.githubusercontent.com/mghwthehe/3179_W10/refs/heads/main/data/choropleth_map_2013_2023.csv"},
       "transform": [
         {"filter": "datum.year == yr"},
         {
           "lookup": "state",
           "from": {
             "data": {
-              "url": "js/ne_10m_admin_1_states_provinces.topojson",
+              "url": "https://raw.githubusercontent.com/mghwthehe/3179_W10/refs/heads/main/js/ne_10m_admin_1_states_provinces.topojson",
               "format": {"type": "topojson", "feature": "ne_10m_admin_1_states_provinces"}
             },
             "key": "properties.state"
@@ -58,7 +58,7 @@
     },
     {
       "data": {
-        "url": "js/ne_10m_admin_1_states_provinces.topojson",
+        "url": "https://raw.githubusercontent.com/mghwthehe/3179_W10/refs/heads/main/js/ne_10m_admin_1_states_provinces.topojson",
         "format": {"type": "topojson", "feature": "ne_10m_admin_1_states_provinces"}
       },
       "mark": {"type": "geoshape", "fill": null, "stroke": "#334155", "strokeWidth": 0.8}

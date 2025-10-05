@@ -4,7 +4,7 @@
   "width": 1000,
   "height": 360,
   "autosize": { "type": "fit", "contains": "padding" },
-  "data": { "url": "data/line_chart_tfr_trend_2013_2023.csv" },
+  "data": { "url": "https://raw.githubusercontent.com/mghwthehe/3179_W10/refs/heads/main/data/line_chart_tfr_trend_2013_2023.csv" },
   "params": [
     {
       "name": "stateSel",
