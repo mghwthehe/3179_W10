@@ -11,20 +11,20 @@
 </head>
 <body>
   <header class="container">
-    <h1>Birth & Fertility in Malaysia (2013-2023)</h1>
-    <p>A Vega-Lite HTML webpage with a choropleth map and a line chart. </p>
+    <h1> Birth & Fertility in Malaysia (2013-2023)</h1>
+    <p> A Vega-Lite HTML webpage with a choropleth map and a line chart. </p>
   </header>
 
-  <main class="container grid">
-    <section class="card">
-      <h2> Live Birth Rate per 1,000 People </h2>
-      <div id="vis-choropleth" class="viz" role="img" aria-label="Choropleth map of birth rate"></div>
-    </section>
+  <main class="container stack">
+  <section class="block">
+    <h2>Live Birth Rate per 1,000 People</h2>
+    <div id="vis-choropleth" class="viz"></div>
+  </section>
 
-    <section class="card">
-      <h2> TFR Trend by State </h2>
-      <div id="vis-line" class="viz" role="img" aria-label="Line chart of total fertility rate"></div>
-    </section>
+  <section class="block">
+    <h2>TFR Trend by State</h2>
+    <div id="vis-line" class="viz"></div>
+  </section>
   </main>
 
   <footer class="container">
@@ -38,7 +38,7 @@
 
   <script>
     // Embed the two visualisations
-    vegaEmbed('#vis-choropleth', 'js/choropleth_map_live_birth_rate.json', {actions:false});
+    vegaEmbed('#vis-choropleth', 'js/choropleth_map_2013_2023.json', {actions:false});
     vegaEmbed('#vis-line',       'js/line_chart_tfr_trend.json',          {actions:false});
   </script>
 </body>
