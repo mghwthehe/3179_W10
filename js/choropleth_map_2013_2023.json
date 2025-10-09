@@ -46,7 +46,7 @@
           "field": "birth_rate_per_1000",
           "type": "quantitative",
           "title": "Births per 1,000",
-          "scale": {"scheme": "greens"}
+          "scale": {"scheme": "greens", "domain": [0, 22]}
         },
         "tooltip": [
           {"field": "state", "type": "nominal", "title": "State"},
